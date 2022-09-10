@@ -17,7 +17,7 @@ const UTC8 = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*6
 async function downFile () {
     const url1 = 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/backup/smzdm_checkin.js'
     // const url1 = 'https://raw.githubusercontent.com/jiegto/Actions_smzdm/main/backup/smzdm_checkin.js'
-    const url2 = 'https://raw.githubusercontent.com/jiegto/Actions_smzdm/main/function/magic.json'    
+    const url2 = 'https://raw.githubusercontent.com/loveme1573/Actions-SMZDM/main/function/magic.json'    
     await download(url1, './')
     await download(url2, './')
 }
