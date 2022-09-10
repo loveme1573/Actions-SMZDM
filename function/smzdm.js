@@ -14,17 +14,15 @@ const PASS = process.env.SMZDM_PASS
 const SEND_KEY = process.env.SEND_KEY
 const UTC8 = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*60*60*1000;
 
-/*
 async function downFile () {
-    const url1 = 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/backup/smzdm_checkin.js'
-    const url12 = 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_mission.js'
+    const url1 = 'https://raw.githubusercontent.com/loveme1573/Actions-SMZDM/main/function/smzdm_checkin.js'
+    const url12 = 'https://raw.githubusercontent.com/loveme1573/Actions-SMZDM/main/function/smzdm_mission.js'
     // const url1 = 'https://raw.githubusercontent.com/jiegto/Actions_smzdm/main/backup/smzdm_checkin.js'
     const url2 = 'https://raw.githubusercontent.com/loveme1573/Actions-SMZDM/main/function/magic.json'    
     await download(url1, './')
     await download(url12, './')
     await download(url2, './')
 }
-*/
 
 async function changeFiele () {
     let content = await fs.readFileSync('./magic.json', 'utf8')
@@ -50,8 +48,8 @@ async function start() {
         return
     }
     // 下载最新代码
-    //await downFile();
-    //console.log('下载代码完毕')
+    await downFile();
+    console.log('下载代码完毕')
     // 替换变量
     await changeFiele();
     console.log('替换变量完毕')
