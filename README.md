@@ -80,7 +80,7 @@
 
 2. 打开开发者工具,在 Network 选项卡，刷新页面 ,然后选中 user ，在右侧的 Headers 标签里，将 Cookie 字段从 sess= 开始到结束，复制出来。
 
-![](https://github.com/jiegto/Actions_smzdm/blob/main/backup/SMZDM_Cookie.jpg?raw=true)
+![](https://github.com/loveme1573/SMZDM/blob/main/backup/SMZDM_Cookie.jpg?raw=true)
 
 ## 签到脚本说明
 
