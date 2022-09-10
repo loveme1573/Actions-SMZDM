@@ -55,6 +55,7 @@ async function start() {
     console.log('替换变量完毕')
     // 执行
     await exec("node smzdm_checkin.js >> result.txt");
+    await exec("node smzdm_mission.js >> result.txt");
     console.log('执行完毕')
     const path = "./result.txt";
     let content = "";
