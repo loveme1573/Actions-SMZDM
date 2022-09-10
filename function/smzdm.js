@@ -14,7 +14,7 @@ const PASS = process.env.SMZDM_PASS
 const SEND_KEY = process.env.SEND_KEY
 const UTC8 = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*60*60*1000;
 
-*/
+/*
 async function downFile () {
     const url1 = 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/backup/smzdm_checkin.js'
     const url12 = 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_mission.js'
